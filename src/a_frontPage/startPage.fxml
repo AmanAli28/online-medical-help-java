@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="735.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="a_frontPage.StartPageController">
+   <children>
+      <Pane stylesheets="@../style.css">
+         <children>
+            <ImageView fitHeight="451.0" fitWidth="1200.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/bg-mod.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="83.0" layoutY="139.0" text="Medicines cure diseases," textFill="#000443">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="83.0" layoutY="175.0" text="but only Doctors cure patients." textFill="#000443">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="64.0" prefWidth="600.0" text="HOSPITAL ON DEMAND" textFill="#000443">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="55.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView glyphName="CLOSE" layoutX="1166.0" layoutY="35.0" onMouseClicked="#close" size="25" styleClass="close-button" />
+         </children>
+      </Pane>
+      <Pane layoutY="352.0" prefHeight="332.0" prefWidth="1200.0" style="-fx-background-color: #9EE0FF;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="215.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/admin.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="525.0" layoutY="65.0" style="-fx-background-color: #E03E3E;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/doctor.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="814.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/patient.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="225.0" layoutY="223.0" mnemonicParsing="false" onMouseClicked="#adminButton" prefHeight="45.0" prefWidth="130.0" styleClass="button-basic" stylesheets="@../main/style.css" text=" Admin">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView glyphName="USER" onMouseClicked="#adminButton" size="20" />
+               </graphic>
+            </Button>
+            <Button layoutX="535.0" layoutY="223.0" mnemonicParsing="false" onMouseClicked="#doctorButton" prefHeight="45.0" prefWidth="130.0" styleClass="button-basic" stylesheets="@../main/style.css" text=" Doctor">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView glyphName="PLUS" onMouseClicked="#doctorButton" size="20" text="" />
+               </graphic>
+            </Button>
+            <Button layoutX="824.0" layoutY="223.0" mnemonicParsing="false" onMouseClicked="#patientButton" prefHeight="45.0" prefWidth="130.0" styleClass="button-basic" stylesheets="@../main/style.css" text=" Patient">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView glyphName="HEART" size="20" text="" />
+               </graphic>
+            </Button>
+            <Label layoutX="1021.0" layoutY="299.0" text="About us">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="1099.0" layoutY="299.0" text="Contact us">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="684.0" prefHeight="60.0" prefWidth="1200.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label layoutX="568.0" layoutY="14.0" text="Made in India" textFill="#aeaeae">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="504.0" layoutY="30.0" text="Copyright © 2021 LazyProgrammers" textFill="#aeaeae">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

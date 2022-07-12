@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="950.0" styleClass="login-main" stylesheets="@../main/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="e_dashBoard.AdminDTBAController">
+   <children>
+      <Pane fx:id="paneApproval" prefHeight="750.0" prefWidth="950.0" styleClass="login-main" stylesheets="@../main/style.css">
+         <children>
+            <Label layoutX="285.0" layoutY="14.0" text="New Doctor Data for verification" textFill="#4e575e">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutX="50.0" layoutY="361.0">
+               <content>
+                  <AnchorPane prefHeight="350.0" prefWidth="850.0">
+                     <children>
+                        <TableView fx:id="Table1" prefHeight="577.0" prefWidth="850.0">
+                           <columns>
+                              <TableColumn fx:id="tab_docid" prefWidth="88.0" text="Doc ID" />
+                              <TableColumn fx:id="uname" prefWidth="134.0" text="UserName" />
+                              <TableColumn fx:id="tab_name" prefWidth="224.0" text="Name" />
+                              <TableColumn fx:id="tab_spec" prefWidth="132.0" text="Specialization" />
+                              <TableColumn fx:id="tab_hosp" prefWidth="140.0" text="Hospital" />
+                              <TableColumn fx:id="tab_doj" prefWidth="112.0" text="Date of Joining" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <Label layoutX="79.0" layoutY="148.0" text="Name: " textFill="#4e575e">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="516.0" layoutY="148.0" prefHeight="27.0" prefWidth="72.0" text="Hospital:" textFill="#4e575e">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="98.0" text="Doctor ID: " textFill="#4e575e">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="461.0" layoutY="201.0" text="Date of joining:" textFill="#4e575e">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="469.0" layoutY="96.0" text="Specialization:" textFill="#4e575e">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="337.0" layoutY="271.0" mnemonicParsing="false" onMouseClicked="#verifyButton" prefHeight="46.0" prefWidth="264.0" styleClass="button-basic" stylesheets="@../main/style.css" text="Verified and Approved">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <TextField fx:id="docid" editable="false" layoutX="144.0" layoutY="94.0" prefHeight="35.0" prefWidth="293.0" styleClass="createAccount-fields" stylesheets="@../main/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="fname" editable="false" layoutX="144.0" layoutY="144.0" prefHeight="35.0" prefWidth="293.0" styleClass="createAccount-fields" stylesheets="@../main/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="hosp" editable="false" layoutX="596.0" layoutY="144.0" prefHeight="35.0" prefWidth="293.0" styleClass="createAccount-fields" stylesheets="@../main/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="spec" editable="false" layoutX="597.0" layoutY="93.0" prefHeight="35.0" prefWidth="293.0" styleClass="createAccount-fields" stylesheets="@../main/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="doj" editable="false" layoutX="597.0" layoutY="197.0" prefHeight="35.0" prefWidth="293.0" styleClass="createAccount-fields" stylesheets="@../main/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="44.0" layoutY="201.0" text="UserName: " textFill="#4e575e">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username1" editable="false" layoutX="144.0" layoutY="197.0" prefHeight="35.0" prefWidth="293.0" styleClass="createAccount-fields" stylesheets="@../main/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

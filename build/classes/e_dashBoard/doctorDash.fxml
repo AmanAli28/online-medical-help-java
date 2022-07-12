@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800" prefWidth="1200" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="e_dashBoard.DoctorDashController">
+   <children>
+      <Pane prefHeight="800.0" prefWidth="250.0" styleClass="blue-main" stylesheets="@../main/style.css">
+         <children>
+            <ImageView fitHeight="272.0" fitWidth="204.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Beautiful-doctor-vector-illustration-PNG_31.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutY="307.0" onMouseClicked="#dashboardButton" prefHeight="50.0" prefWidth="250.0" ripplerFill="#5588edbf" text="DashBoard" textFill="#696a6b">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutY="357.0" onMouseClicked="#problemsButton" prefHeight="50.0" prefWidth="250.0" ripplerFill="#5588edbf" text="Problems" textFill="#696a6b">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="250.0" prefHeight="50.0" prefWidth="950.0" styleClass="blue-main" stylesheets="@../main/style.css">
+         <children>
+            <Label layoutX="14.0" layoutY="6.0" text="Welcome " textFill="#4e575e">
+               <font>
+                  <Font name="Impact" size="30.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="861.0" layoutY="8.0" onMouseClicked="#logoutButton" ripplerFill="#ff000090" styleClass="logout-button" stylesheets="@../main/style.css" text="Logout" textAlignment="CENTER" textFill="#ff0000bc" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="nameHeading" layoutX="137.0" layoutY="8.0" prefHeight="38.0" prefWidth="270.0" textFill="#4e575e">
+               <font>
+                  <Font name="Impact" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="mainpane" layoutX="250.0" layoutY="50.0" prefHeight="750.0" prefWidth="950.0" styleClass="login-main" stylesheets="@../main/style.css">
+         <children>
+            <ImageView fitHeight="192.0" fitWidth="319.0" layoutX="632.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/HospitalIcon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lab_name" layoutX="57.0" layoutY="56.0" text="Aman Ali Shaikh" textFill="#4e575e">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab_email" layoutX="57.0" layoutY="86.0" text="amanali1028@gmail.com" textFill="#4e575e">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab_doj" layoutX="57.0" layoutY="116.0" text="28/10/2000" textFill="#4e575e">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab_mob" layoutX="57.0" layoutY="146.0" text="+91 74175 84465" textFill="#4e575e">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="414.0" fitWidth="628.0" layoutX="182.0" layoutY="273.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/cartoon-character-with-professional-doctors-nurses-wearing-protective-suite-standing-together-fight-coronavirus_3559-1498.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

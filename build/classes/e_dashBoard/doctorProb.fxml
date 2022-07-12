@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="750" prefWidth="950" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="e_dashBoard.DoctorProbController">
+   <children>
+      <Pane prefHeight="750.0" prefWidth="950.0" styleClass="login-main" stylesheets="@../main/style.css">
+         <children>
+            <Label layoutX="296.0" layoutY="14.0" text="Lets Solve some problems">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="221.0" layoutY="76.0" text="Type:" textFill="#4e575e">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="type" layoutX="275.0" layoutY="72.0" prefHeight="35.0" prefWidth="293.0" styleClass="createAccount-fields" stylesheets="@../main/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Button layoutX="609.0" layoutY="67.0" mnemonicParsing="false" onMouseClicked="#searchButton" prefHeight="35.0" prefWidth="121.0" styleClass="button-basic" stylesheets="@../main/style.css" text="Search">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <ScrollPane layoutX="49.0" layoutY="125.0" prefHeight="250.0">
+               <content>
+                  <TableView fx:id="Table1" prefHeight="577.0" prefWidth="850.0">
+                     <columns>
+                        <TableColumn fx:id="tab_pid" prefWidth="88.0" text="Prob ID" />
+                        <TableColumn fx:id="tab_name" prefWidth="134.0" text="Name of Patient" />
+                        <TableColumn fx:id="tab_type" prefWidth="132.0" text="Type" />
+                        <TableColumn fx:id="tab_message" prefWidth="244.0" text="Message" />
+                        <TableColumn fx:id="tab_symp" prefWidth="238.0" text="Symptoms" />
+                     </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+            <Pane layoutY="383.0" prefHeight="366.0" prefWidth="950.0" styleClass="login-main" stylesheets="@../main/style.css">
+               <children>
+                  <TextField fx:id="name" layoutX="364.0" layoutY="14.0" prefHeight="35.0" prefWidth="293.0" styleClass="createAccount-fields" stylesheets="@../main/style.css">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="294.0" layoutY="18.0" text="Name:" textFill="#4e575e">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextArea fx:id="advise" labelFloat="true" layoutX="71.0" layoutY="82.0" prefHeight="175.0" prefWidth="350.0" promptText="Advise" />
+                  <JFXTextArea fx:id="prescription" labelFloat="true" layoutX="550.0" layoutY="82.0" prefHeight="175.0" prefWidth="350.0" promptText="Prescription" />
+                  <Button layoutX="370.0" layoutY="291.0" mnemonicParsing="false" onMouseClicked="#submitButton" prefHeight="46.0" prefWidth="210.0" styleClass="button-basic" stylesheets="@../main/style.css" text="Submit">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

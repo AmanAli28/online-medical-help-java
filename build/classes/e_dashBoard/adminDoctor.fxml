@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="750" prefWidth="950" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="e_dashBoard.AdminDoctorController">
+   <children>
+      <Pane prefHeight="750.0" prefWidth="950.0" styleClass="login-main" stylesheets="@../main/style.css">
+         <children>
+            <Label layoutX="386.0" layoutY="14.0" text="Doctor Table">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutX="25.0" layoutY="80.0">
+               <content>
+                  <AnchorPane prefHeight="650.0" prefWidth="900.0">
+                     <children>
+                        <TableView fx:id="docTable" prefHeight="1000.0" prefWidth="1200.0">
+                           <columns>
+                              <TableColumn fx:id="tusername" prefWidth="104.0" text="UserName" />
+                              <TableColumn fx:id="tname" prefWidth="185.0" text="Name" />
+                              <TableColumn fx:id="tmobno" prefWidth="115.0" text="Mob. No." />
+                              <TableColumn fx:id="thospital" prefWidth="118.0" text="Hospital" />
+                              <TableColumn fx:id="tdoj" prefWidth="107.0" text="Date of Joining" />
+                              <TableColumn fx:id="tgender" prefWidth="58.0" text="gender" />
+                              <TableColumn fx:id="tspeciallization" prefWidth="113.0" text="specialization" />
+                              <TableColumn fx:id="temail" prefWidth="200.0" text="email" />
+                              <TableColumn fx:id="tid" prefWidth="102.0" text="Doc ID" />
+                              <TableColumn fx:id="tapproved" prefWidth="82.0" text="Approved" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

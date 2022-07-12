@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="e_dashBoard.AdminDashController">
+   <children>
+      <Pane prefHeight="800.0" prefWidth="250.0" styleClass="blue-main" stylesheets="@../main/style.css">
+         <children>
+            <ImageView fitHeight="234.0" fitWidth="253.0" layoutX="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/admin-login.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutY="256.0" onMouseClicked="#dashboardButton" prefHeight="50.0" prefWidth="250.0" ripplerFill="#5588edbf" text="DashBoard" textFill="#696a6b">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutY="700.0" onMouseClicked="#patientsButton" prefHeight="50.0" prefWidth="250.0" ripplerFill="#5588edbf" text="Patients" textFill="#696a6b">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutY="306.0" onMouseClicked="#doctors_to_be_approved" prefHeight="50.0" prefWidth="250.0" ripplerFill="#5588edbf" text="Doctors to be approved" textFill="#696a6b">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutY="356.0" onMouseClicked="#doctorsButton" prefHeight="50.0" prefWidth="250.0" ripplerFill="#5588edbf" text="Doctors" textFill="#696a6b">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="74.0" layoutY="778.0" text="All Rights Reserved" textFill="#575757" />
+         </children>
+      </Pane>
+      <Pane fx:id="mainpane" layoutX="250.0" layoutY="50.0" prefHeight="750.0" prefWidth="950.0" styleClass="login-main" stylesheets="@../main/style.css">
+         <children>
+            <Pane layoutX="53.0" layoutY="396.0" prefHeight="250.0" prefWidth="400.0" styleClass="doc-count" stylesheets="@../main/style.css">
+               <children>
+                  <Label layoutX="34.0" layoutY="178.0" text="Total Doctors" textFill="#3f3f3f">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font></Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="230.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/medical-icon-png-6589.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="docCount" layoutX="90.0" layoutY="42.0" text="0" textFill="#3f3f3f">
+                     <font>
+                        <Font name="Impact" size="100.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="496.0" layoutY="396.0" prefHeight="250.0" prefWidth="400.0" styleClass="pat-count" stylesheets="@../main/style.css">
+               <children>
+                  <Label layoutX="35.0" layoutY="178.0" text="Total Patients" textFill="#3f3f3f">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="230.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/patient-icon-9245.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="patCount" layoutX="92.0" layoutY="42.0" text="0" textFill="#3f3f3f">
+                     <font>
+                        <Font name="Impact" size="100.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="306.0" fitWidth="920.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/doc_bg2.jpg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane layoutX="250.0" prefHeight="50.0" prefWidth="950.0" styleClass="blue-main" stylesheets="@../main/style.css">
+         <children>
+            <Label layoutX="14.0" layoutY="6.0" text="Welcome Admin" textFill="#4e575e">
+               <font>
+                  <Font name="Impact" size="30.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="867.0" layoutY="7.0" onMouseClicked="#logoutButton" ripplerFill="#ff000090" styleClass="logout-button" stylesheets="@../main/style.css" text="Logout" textAlignment="CENTER" textFill="#ff0000bc" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

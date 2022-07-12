@@ -1,0 +1,72 @@
+.button-basic{
+    -fx-text-fill: #444444;
+    -fx-background-radius: 50px;
+    -fx-background-color: CCF2FF;
+    -fx-border-radius: 50px;
+    -fx-border-color: #444444;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+}
+
+.button-basic:hover{
+    -fx-text-fill: white;
+    -fx-background-color: #0DA9F1;
+    -fx-border-color: #0DA9F1; 
+    -fx-cursor: hand;
+}
+
+.close-button:hover{
+    -fx-fill: red;
+}
+
+.back-button:hover{
+    -fx-fill: yellow;
+}
+
+.login-sidebar{
+    -fx-background-color: #CCF2FF;
+}
+
+.login-main{
+    -fx-background-color: white;   
+}
+
+.blue-main{
+    -fx-background-color: skyblue;   
+}
+
+.logout-button{
+    -fx-background-color: skyblue;
+/*    -fx-text-fill: #ff0000;*/
+    -fx-cursor: hand;
+    -fx-fill: skyblue;
+}
+
+.login-forgot{
+    -fx-background-color: white;
+    -fx-text-fill: grey;
+    -fx-cursor: hand;
+}
+
+.createAccount-fields{
+    -fx-border-radius: 70px;
+    -fx-background-radius: 70px;
+}
+
+.counts{
+    -fx-background-color: skyblue;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    
+    /*-fx-border-style: solid;*/
+}
+
+.doc-count{
+    -fx-background-color: #FF4747;
+    
+}
+
+.pat-count{
+    -fx-background-color: #7EFF4A;
+    
+}
